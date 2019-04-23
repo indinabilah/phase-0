@@ -1,6 +1,9 @@
 function angkaPrima(angka) {
     // you can only write your code here!
     var arr = []
+    if(angka === 1 || angka === 0){
+        return false
+    }
     for(i = 2; i <= angka; i++){
         arr.push(i)
     }
@@ -18,3 +21,6 @@ function angkaPrima(angka) {
   console.log(angkaPrima(6)); // false
   console.log(angkaPrima(23)); // true
   console.log(angkaPrima(33)); // false
+  console.log(angkaPrima(1)); // false
+  console.log(angkaPrima(0)); // false
+
